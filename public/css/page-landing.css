@@ -7,6 +7,7 @@
   display: flex;
 }
 
+/* vh: viewport height, vw: viewport width. Unidades de tamanho relativas ao espaço */
 #container {
   margin: auto;
   width: min(90%, 112rem);
@@ -27,7 +28,7 @@ h1,
 }
 
 main h1 {
-  font-size: clamp(4rem, 8vw, 8.4rem);
+  font-size: clamp(4rem, 8vw, 8.4rem); /*formula clamp(tamanho minimo, tamanho ideal, tamanho maximo)*/
   animation-delay: 150ms;
 }
 
