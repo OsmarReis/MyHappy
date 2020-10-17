@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nosso Lar | Happy</title>
+    <title>Cadastre um orfanato | Happy</title>
 
     <link
       rel="stylesheet"
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./public/css/sidebar.css" />
     <link rel="stylesheet" href="./public/css/map.css" />
     <link rel="stylesheet" href="./public/css/forms.css" />
+    <link rel="stylesheet" href="./public/css/buttons.css" />
     <link rel="stylesheet" href="./public/css/page-create-orphanage.css" />
 
     <link
@@ -99,9 +100,28 @@
             </div>
 
             <div class="input-block">
-              <label for="opening-hours">Horário das visitas</label>
-              <input id= "opening-hours" type="text" name= "opening-hours">
+              <label for="opening_hours">Horário das visitas</label>
+              <input id= "opening_hours" type="text" name= "opening_hours">
             </div>
+
+            <div class="input-block">
+              <label for="open_on_weekends">Atende fim de semana?</label>
+              <input 
+                id= "open_on_weekends" 
+                type="hidden" 
+                name= "open_on_weekends"
+                value= "1">
+
+                <div class="button-select">
+                  <button type="button" class="active">Sim</button>
+                  <button type="button">Não</button>
+                </div>
+
+                <button type="submit" class="primary-button">Confirmar</button>
+
+            </div>
+
+            
 
           </fieldset>
         </form>
