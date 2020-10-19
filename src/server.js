@@ -6,6 +6,9 @@ const pages = require('./pages.js');
 // init express library
 const server = express()
 server
+// use request's body
+.use(express.urlencoded({ extended: true}))
+
 // use static files
 .use(express.static('public'))
 
@@ -18,7 +21,7 @@ server
 .get('/orphanage', pages.orphanage)
 .get('/orphanages', pages.orphanages)
 .get('/create-orphanage', pages.createOrphanage)
-
+.post('/save-orphanage', pages.saveOrphanages)
 
 // call server
 server.listen(5500)
